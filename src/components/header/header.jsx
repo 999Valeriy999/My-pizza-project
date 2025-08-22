@@ -1,27 +1,21 @@
-import React from 'react';
-import logo from './logo/image_1.svg';
+import Button from './Button';
+import logoSrc from '/src/components/logo/image_1.svg';
 
 function Header() {
   return (
   
-    <div className="header-container">
-      <div className="Header_logo"> 
-        <img width="36" src={logo} alt="Логотип пиццы" /> {/* alt текст описываемый */}
-        <button>Заказать</button> {/* текст для кнопки */}
+
+      <div> 
+        <img src={logoSrc} alt="React pizza" />
         <h1>React Pizza</h1>
         <p>Super pizza</p>
+      <div>
+        <Button onClick={() => alert('Нажата кнопка!')}>
+        Замовити
+      </Button>
+  
       </div>
-
-      <div className="header_card">
-        {/*
-          <Link> из react-router-dom для навигации вместо <a>, т.к. используется react-router-dom.
-          <a class="button_card" href='./card'>
-        */}
-        <Link className="button_card" href='./card'>
-          <span>0 грн.</span>
-        </Link>
       </div>
-    </div>
   );
 }
 

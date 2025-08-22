@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "axios": "^1.11.0",
+    "classnames": "^2.5.1",
     "eslint": "^9.31.0",
     "gitignore": "^0.7.0",
     "prop-types": "^15.8.1",
