@@ -1,8 +1,7 @@
-
 import classname from "classnames";
 
 const Button = ({
- onClick, className, disabled, active,  children
+ onClick, className, disabled, active,
 }) => {
 const classes = classname(
 'btn',
@@ -10,13 +9,11 @@ className,
 {active},
 );
     return (
-        <button
+        <button>
         className={classes}
         disabled={disabled}
-        onClick={onClick}>
-           {children} 
+        onClick={onClick}
         </button>
-    
     );
 };
 
@@ -24,7 +21,7 @@ Button.defaultProps = {
     children: 'Default button',
     className: '',
     disabled: false,
-    active: false,
-    
+    active: false, 
 };
+
 export default Button;

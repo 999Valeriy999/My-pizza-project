@@ -1,21 +1,23 @@
-import Button from './Button';
+import Button from '../Button/Button';
 import logoSrc from '/src/components/logo/image_1.svg';
+import './Header.scss';
 
 function Header() {
   return (
-  
-
-      <div> 
+      <header className="header">
+      <div className="header_logo">
         <img src={logoSrc} alt="React pizza" />
-        <h1>React Pizza</h1>
-        <p>Super pizza</p>
-      <div>
+        <div className="header_text">
+          <h1>React Pizza</h1>
+          <p>Super pizza</p>
+        </div>
+      </div>
+      <div className="header_actions">
         <Button onClick={() => alert('Нажата кнопка!')}>
-        Замовити
-      </Button>
-  
+          Замовити
+        </Button>
       </div>
-      </div>
+    </header>
   );
 }
 
