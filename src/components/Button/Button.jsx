@@ -1,5 +1,4 @@
 import classname from "classnames";
-
 const Button = ({
  onClick, className, disabled, active,
 }) => {
