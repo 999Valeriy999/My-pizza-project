@@ -24,12 +24,12 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  margin: 0;              
+  padding: 0;
+  width: 100%;
+} 
+
+
 
 h1 {
   font-size: 3.2em;
@@ -73,16 +73,8 @@ button:focus-visible {
 }
 
 .header {
-  display: flex;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid #eee;
   width: 100%;
 }
 
-.header_logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: space-between;
-}

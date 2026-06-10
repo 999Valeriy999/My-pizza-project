@@ -1,27 +1,7 @@
-import classname from "classnames";
-
-const Button = ({
- onClick, className, disabled, active,
-}) => {
-const classes = classname(
-'btn',
-className,
-{active},
+function Button() {
+return ( 
+<button type="submit">Замовити</button>
 );
-    return (
-        <button>
-        className={classes}
-        disabled={disabled}
-        onClick={onClick}
-        </button>
-    );
-};
-
-Button.defaultProps = {
-    children: 'Default button',
-    className: '',
-    disabled: false,
-    active: false, 
-};
-
+}
 export default Button;
+ 
