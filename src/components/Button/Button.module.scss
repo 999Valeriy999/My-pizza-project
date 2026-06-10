@@ -1,0 +1,40 @@
+$primary-color: #fe5f1e; 
+$text-color: #ffffff;    
+$hover-color: #eb5a1b;
+$disabled-color: #cccccc;
+
+.button {
+  
+  display: inline-block;
+  cursor: pointer;     
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 25px;    
+  font-size: 16px;       
+  font-weight: 600;      
+  text-align: center;    
+  transition: background-color 0.2s ease, transform 0.1s ease;
+
+  
+  background-color: $primary-color;
+  color: $text-color;
+
+  
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: none;           
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    background-color: $disabled-color;
+    color: #888888;
+    &:hover {
+      background-color: $disabled-color;
+    }
+  }
+}
