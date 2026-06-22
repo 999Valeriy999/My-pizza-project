@@ -1,18 +1,30 @@
-<<<<<<< HEAD
-function Button() {
-return ( 
-<button type="submit">Замовити</button>
-=======
-import classname from "classnames";
+import React from 'react';
+import classNames from 'classnames';
+
 const Button = ({
- onClick, className, disabled, active,
+  onClick, 
+  className, 
+  disabled, 
+  active,
+  children = 'Замовити',
+  type = 'submit'        
 }) => {
-const classes = classname(
-'btn',
-className,
-{active},
->>>>>>> dbbcf459f20eb6b4403fec5c0794a83adc2402a1
-);
-}
+  const classes = classNames(
+    'btn',
+    className,
+    { active }
+  );
+
+  return (
+    <button
+      type={type}
+      className={classes}
+      onClick={onClick}
+      disabled={disabled}
+    >
+      {children}
+    </button>
+  );
+};
+
 export default Button;
- 
